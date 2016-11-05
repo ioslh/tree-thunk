@@ -1,8 +1,9 @@
 function Thunk(fn) {
   return function(){
     var args = [].slice.call(arguments);
-    return function(v){
-      args.push(v);
+    return function(){
+      var v = [].slice.call(arguments);
+      args = args.concat(v);
       return fn.apply(null,args);
     }
   }
