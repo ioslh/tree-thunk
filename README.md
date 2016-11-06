@@ -1,5 +1,6 @@
 #### TreeThunk
 将多参数函数转成单参数函数
+> 这个我也不知道怎么表述好
 
 ```javascript
 var TreeThunk = require('./TreeThunk');
